@@ -1,0 +1,30 @@
+{
+  "name": "self-healing-smart-meter-system",
+  "version": "1.0.0",
+  "description": "Self-Healing Smart Meter System with AI diagnosis and automatic fault recovery",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm run install:firmware && npm run install:cloud && npm run install:dashboard && npm run install:mobile",
+    "install:firmware": "cd firmware && pip install -r requirements.txt",
+    "install:cloud": "cd cloud-platform && npm install",
+    "install:dashboard": "cd dashboard && npm install",
+    "install:mobile": "cd mobile-app && npm install",
+    "start:cloud": "cd cloud-platform && npm start",
+    "start:dashboard": "cd dashboard && npm start",
+    "start:mobile": "cd mobile-app && npm start",
+    "test": "npm run test:cloud && npm run test:dashboard",
+    "test:cloud": "cd cloud-platform && npm test",
+    "test:dashboard": "cd dashboard && npm test"
+  },
+  "keywords": [
+    "iot",
+    "smart-meter",
+    "self-healing",
+    "ai",
+    "blockchain",
+    "digital-twin"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+
